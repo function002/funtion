@@ -4,7 +4,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba($color: #b5408c, $alpha: 0.8);
+    background: rgba($color: #000000, $alpha: 0.5);
 }
 
 .carousel-item {
@@ -73,7 +73,6 @@
     }
 }
 
-
 .text-center {
     h1 {
         padding-bottom: 20px;
@@ -83,11 +82,59 @@
         padding-bottom: 20px;
     }
 }
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #888888;
-    padding: 20px;
+.banner-search {
+    min-width: 100%;
+    padding: 10px 190px 10px 10px;
+    position: relative;
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 45px;
+    .input-block {
+        float: left;
+        width: 33.33%;
+        padding: 0 0;
+        margin: 0px;
+        input {
+            border-radius: 35px 0 0 35px;
+            border: none;
+            height: 70px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            box-shadow: 0px 0px 0px;
+            outline: none;
+        }
+    }
+    .location {
+        float: left;
+        width: 33.33%;
+        padding: 0 0;
+        margin: 0px;
+        input {
+            border-radius: 0;
+            border: none;
+            height: 70px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            box-shadow: 0px 0px 0px;
+            outline: none;
+            border-left: solid 1px #46282e;
+            position: relative;
+        }
+    }
+    .submit-block {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 181px;
+        button {
+            height: 70px;
+            border-radius: 0 45px 45px 0;
+            box-shadow: 0px 0px 0px;
+            border: none;
+            background: #e8436d;
+            width: 100%;
+        }
+    }
 }
